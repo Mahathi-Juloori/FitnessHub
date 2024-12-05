@@ -1,0 +1,154 @@
+/* General styles for the whole website */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #aca7a7;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Container class to center content */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Heading styles */
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style-type: none;
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Styles for the section containing the cards */
+.section {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap to the next line if they don't fit */
+    justify-content: space-between; /* Distributes space between cards */
+    gap: 20px; /* Space between cards */
+}
+
+/* Styles for each card */
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    width: 30%; /* Adjust width to fit desired layout */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card .image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card .info {
+    margin-top: 10px;
+}
+
+/* Button styles */
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Contact form styles */
+.contact-form {
+    width: 300px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive design for mobile */
+@media screen and (max-width: 768px) {
+    .section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%; /* Adjust width to fit smaller screens */
+    }
+}
+
+.card .image img {
+    width: 150%;
+    height: auto;
+    display: block;
+}

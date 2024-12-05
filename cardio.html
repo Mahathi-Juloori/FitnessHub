@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="substyle.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav> 
+    <div class="filter-container">
+        <label for="filter">Filter Workouts: </label>
+        <select id="filter" onchange="filterCards(this.value)">
+            <option value="all">Show All</option>
+            <option value="low">Low Intensity</option>
+            <option value="moderate">Moderate Intensity</option>
+            <option value="high">High Intensity</option>
+            <option value="equipment">Equipment</option>
+            <option value="noequipment">No Equipment</option>
+        </select>
+    </div>    
+    <div class="container">
+        <h1>FITNESS</h1>
+        <div class="section">
+            <div class="card" data-url="https://youtu.be/3SpPraOLJl4?si=6eHGp9hD4WIwOHDI" data-category="low noequipment" >
+                <img src="C:\Users\mahat\Desktop\fitness\low2.webp" alt="Workout Image" class="card-image">
+                <div class="card-content">
+                    <h3>LOW INT1</h3>
+                    <p>Description of the workout. Duration, benefits, and key muscles targeted.</p>
+                </div>
+            </div>
+            <div class="card" data-url="https://youtu.be/enYITYwvPAQ?si=SFqIncY_aJu_Axfs" data-category="low noequipment"  >
+                <img src="C:\Users\mahat\Desktop\fitness\low3.webp" alt="Workout Image" class="card-image">
+                <div class="card-content">
+                    <h3>low2</h3>
+                    <p>Description of the workout. Duration, benefits, and key muscles targeted.</p>
+                </div>
+            </div>
+            <div class="card" data-url="https://youtu.be/tmEeghaHoz0?si=UW7h_GHuytapWBoX" data-category="low noequipment"  >
+                <img src="C:\Users\mahat\Desktop\fitness\low41.webp" alt="Workout Image" class="card-image">
+                <div class="card-content">
+                    <h3>low3noeqp</h3>
+                    <p>Description of the workout. Duration, benefits, and key muscles targeted.</p>
+                </div>
+            </div>
+            <div class="card" data-url="https://youtu.be/IvmaekQfKiw?si=OOWISaD0eT4WRekZ" data-category="moderate noequipment"  >
+                <img src="C:\Users\mahat\Desktop\fitness\mod1.webp" alt="Workout Image" class="card-image">
+                <div class="card-content">
+                    <h3>modint1noeqp</h3>
+                    <p>Description of the workout. Duration, benefits, and key muscles targeted.</p>
+                </div>
+            </div>
+            <div class="card" data-url="https://youtu.be/vnBXaCsoEPU?si=rW3HiGtGhA7akJg8" data-category="moderate noequipment" >
+                <img src="C:\Users\mahat\Desktop\fitness\mod2.webp" alt="Workout Image" class="card-image">
+                <div class="card-content">
+                    <h3>modint2noeqp</h3>
+                    <p>Description of the workout. Duration, benefits, and key muscles targeted.</p>
+                </div>
+            </div>
+            <div class="card" data-url="https://youtu.be/ibq_LYl-mX4?si=vYq0PP07dDxh37nS" data-category="moderate equipment" >
+                <img src="C:\Users\mahat\Desktop\fitness\mod3.webp" alt="Workout Image" class="card-image">
+                <div class="card-content">
+                    <h3>modint3eqp</h3>
+                    <p>Description of the workout. Duration, benefits, and key muscles targeted.</p>
+                </div>
+            </div>
+            <div class="card" data-url="https://youtu.be/FeR-4_Opt-g?si=vRx12ngbxKL5VWz-" data-category="high noequipment" >
+                <img src="C:\Users\mahat\Desktop\fitness\hit1.webp" alt="Workout Image" class="card-image">
+                <div class="card-content">
+                    <h3>highint1noeqp</h3>
+                    <p>Description of the workout. Duration, benefits, and key muscles targeted.</p>
+                </div>
+            </div>
+            <div class="card" data-url="https://youtu.be/ml6cT4AZdqI?si=kw5mE171mjuZM0ke" data-category="high noequipment" >
+                <img src="C:\Users\mahat\Desktop\fitness\hit2.webp" alt="Workout Image" class="card-image">
+                <div class="card-content">
+                    <h3>highint2noeqp</h3>
+                    <p>Description of the workout. Duration, benefits, and key muscles targeted.</p>
+                </div>
+            </div>
+            <div class="card" data-url="https://youtu.be/szXJSRb3tiY?si=gqrF7kLrRTnY_w-b" data-category="high equipment" >
+                <img src="C:\Users\mahat\Desktop\fitness\hit3.webp" alt="Workout Image" class="card-image">
+                <div class="card-content">
+                    <h3>highint3eqp</h3>
+                    <p>Description of the workout. Duration, benefits, and key muscles targeted.</p>
+                </div>
+            </div>
+            
+        </div>
+        <button onclick="goBack()" class="back-to-home">Back to Home</button>
+    </div>
+    <script src="subscript.js"></script>
+</body>
+</html>

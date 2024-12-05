@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>    
+    <div class="container">
+        <h1>FITNESS</h1>
+        <div class="section">
+            <div class="card" onclick="navigateTo('cardio.html')">
+                <div class="image">
+                    <img src="C:\Users\mahat\Desktop\fitness\cardio.jpeg" alt="Cardio" >
+                </div>
+                <div class="info">
+                    <strong>CARDIO:</strong>
+                    <p>Boost your energy and mood with cardio! Get your heart racing and calories burning with dynamic workouts that make fitness fun and effective.</p>
+                </div>
+            </div>
+
+            <div class="card" onclick="navigateTo('core.html')">
+                <div class="image">
+                    <img src="C:\Users\mahat\Desktop\fitness\ST.jpeg" alt="Strength Training">
+                </div>
+                <div class="info">
+                    <strong>Strength Training:</strong>
+                    <p>Transform your body and strength with targeted workouts! Build muscle, enhance power, and see results with every rep.</p>
+                </div>
+            </div>
+
+            <div class="card" onclick="navigateTo('yoga.html')">
+                <div class="image">
+                    <img src="C:\Users\mahat\Desktop\fitness\yoga.jpeg" alt="Yoga">
+                </div>
+                <div class="info">
+                    <strong>Yoga:</strong>
+                    <p>Find your balance and inner peace with yoga! Stretch, strengthen, and refresh your body and mind in every session.</p>
+                </div>
+            </div>
+
+            <div class="card" onclick="navigateTo('challenge.html')">
+                <div class="image">
+                    <img src="C:\Users\mahat\Desktop\fitness\challenge.jpeg" alt="Challenge">
+                </div>
+                <div class="info">
+                    <strong>Challenge:</strong>
+                    <p>Embrace the challenge and unlock your potential! Push your limits with invigorating workouts designed to test and transform your strength and endurance.</p>
+                </div>
+            </div>
+        </div>
+        <button onclick="goBack()" class="back-to-home">Back to Home</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

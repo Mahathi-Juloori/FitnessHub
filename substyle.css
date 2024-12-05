@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #aca7a7;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Heading styles */
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style-type: none;
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Card Styles */
+.card {
+    display: flex;
+    align-items: center;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+    padding: 10px;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+/* Image styling within the card */
+.card-image {
+    width: 300px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Card content styling */
+.card-content {
+    padding: 0 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+.card p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Button styles */
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.filter-container {
+    position: absolute; /* Use fixed for sticky positioning */
+    top: 20px; /* Adjust top distance */
+    right: 20px; /* Adjust right distance */
+    background-color: rgba(255, 255, 255, 0.8); /* Background for visibility */
+    padding: 10px; /* Space around dropdown */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    z-index: 1000; /* On top of other elements */
+}
+
+.filter-container label {
+    margin-right: 10px; /* Space between label and dropdown */
+}
+
+.filter-container select {
+    padding: 5px; /* Padding inside the dropdown */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ccc; /* Border for dropdown */
+}
+
